@@ -8,6 +8,9 @@
     margin: 0px;
 }
 
+html, body {
+    min-height: 100vh;
+}
 :root {
     --font1: Verdana, Geneva, Tahoma, sans-serif;
     --font2: 'Passion One', cursive;
@@ -34,18 +37,20 @@ div#titulo {
 
 header h1 {
     font-size: 10vw;
-    padding: 10px ;
+    padding-top: 50px;
     font-family: var(--font2);
+    font-variant: small-caps; /*para captular a fonte*/
 }
 
 a {
     text-decoration: none;
-    font-weight: bold;
+    font-weight: bolder;
     color: white;
 }
 
-header p, footer {
+header p {
     font-family: var(--font1);
+    padding-bottom: 50px;
 }
 
 a:hover {
@@ -54,22 +59,24 @@ a:hover {
 
 section {
     background-color: white;
-    padding: 15px 0px 15px 20px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
 }
 
 #imagem1 {
-    position: relative;
-    height: 500px;
+    
     background: black url(../imagens/background001.jpg) right center no-repeat fixed;
     background-size: cover;
 }
 
 #imagem2 {
-    position: relative;
-    height: 500px;
+    
     background: black url(../imagens/background002.jpg) right center no-repeat fixed;
     background-size: cover;
 }
+
+
 
 section p {
     line-height: 2em;
@@ -81,8 +88,7 @@ section p {
 .imagem > p {
     color: white;
     background-color: rgba(0, 0, 0, 0.479);
-    position: absolute;
-    top: 12%;
+    width: 400px;
     
 }
 
@@ -90,10 +96,11 @@ footer {
     height: 40px;
     background-color: black;
     text-align: center;
+    font-family: var(--font1);
 }
 
 footer p {
     font-size: 1em;
     color: white;
-    padding-top: 10px;
+    padding: 10px;
 }
