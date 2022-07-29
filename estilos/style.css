@@ -89,7 +89,12 @@ section p {
     color: white;
     background-color: rgba(0, 0, 0, 0.479);
     width: 60vw;
+    text-shadow: 1px 1px 0px black;
     
+}
+
+.imagem {
+    box-shadow: inset 0px 10px 13px rgba(0, 0, 0, 0.486);
 }
 
 footer {
